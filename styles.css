@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Figtree-med';
+  src: url(./assets/fonts/static/Figtree-Medium.ttf)  format('truetype');
+}
+
+@font-face {
+  font-family: 'Figtree-xbold';
+  src: url(./assets/fonts/static/Figtree-ExtraBold.ttf)  format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F4d04e;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+.card-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 522px;
+  width: 384px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px 1px rgba(0,0,0,1);  
+  transition: all 0.5s ease;
+}
+
+.card-content:hover {  
+  box-shadow: 15px 15px 0px 5px rgba(0,0,0,1);
+}
+
+.card-content:hover .card-preset-1 {
+  color: #F4d04e;
+}
+
+.card-content img {
+  width: 100%;
+  padding: 20px
+}
+
+.card-preset-3, .card-preset-1, .card-preset-2, .card-preset-3-bold {
+  align-self: flex-start;
+  margin: 5px 20px;
+}
+
+.card-preset-3-bold {
+  width: 82px;
+  height: 29px;
+  background-color: #F4d04e;
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px;
+}
+
+.card-preset-1 {
+  font-family: 'Figtree-xbold';
+  font-size: 24px;
+  line-height: 150%;
+  transition: all 0.5s ease;
+}
+
+.card-preset-2 {
+  font-family: 'Figtree-med';
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6b;
+}
+
+.card-preset-3 {
+  font-family: 'Figtree-med';
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.card-preset-3-bold {
+  font-family: 'Figtree-xbold';
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.card-creator {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.card-creator img {
+  width: 80px;
+  height: 80px;
+}
+
+.card-creator span {
+  font-family: 'Figtree-med';
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
